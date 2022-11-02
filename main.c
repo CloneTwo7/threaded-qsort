@@ -27,11 +27,6 @@ int main(int argc, char **argv) {
 	sortThreaded(arr, index);
 	gettimeofday(&end, NULL);
 
-	for(int i = 0; i < index; i++) {
-		printf("%s\n", arr[i]);
-	}
-
-
 	int elapsed = ((end.tv_sec - start.tv_sec) * 1000000) + (end.tv_usec - start.tv_usec);
 	printf("Time taken to sort: %dms\n", elapsed);
 }
